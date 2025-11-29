@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeTime - Contact Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #fff8f0;
+      color: #4b2e2e;
+    }
+
+    /* Header / Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #6b3e26;
+      color: #fff;
+    }
+
+    header h1 {
+      font-family: 'Georgia', serif;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f3c28a;
+    }
+
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 36px;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      gap: 50px;
+    }
+
+    .contact-info, .contact-form {
+      background-color: #fff4eb;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      padding: 30px;
+      max-width: 400px;
+      flex: 1;
+    }
+
+    .contact-info h3, .contact-form h3 {
+      color: #6b3e26;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #4b2e2e;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: #6b3e26;
+      box-shadow: 0 0 5px #6b3e26;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #6b3e26;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #8b5e3c;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #6b3e26;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #f3c28a;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 900px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-info, .contact-form {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <h1>CoffeeTime</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <div class="page-title">Contact Us</div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>Address:</strong> Rajahmundry, East Godavari</p>
+      <p><strong>Phone:</strong> +91 6352149825</p>
+      <p><strong>Email:</strong> info@coffeetime.com</p>
+      <p>We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, drop us a message using the form.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CoffeeTime. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>

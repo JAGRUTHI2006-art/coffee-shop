@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeTime - About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #fff8f0;
+      color: #4b2e2e;
+    }
+
+    /* Header / Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #6b3e26;
+      color: #fff;
+    }
+
+    header h1 {
+      font-family: 'Georgia', serif;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f3c28a;
+    }
+
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 36px;
+      color: #6b3e26;
+      font-family: 'Georgia', serif;
+    }
+
+    /* About Section */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 40px;
+      background-color: #fff4eb;
+    }
+
+    .about-text {
+      max-width: 500px;
+    }
+
+    .about-text h2 {
+      margin-bottom: 20px;
+      color: #6b3e26;
+    }
+
+    .about-text p {
+      line-height: 1.7;
+      color: #4b2e2e;
+      margin-bottom: 15px;
+    }
+
+    .about-image img {
+      width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Mission / Vision Section */
+    .mission-vision {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .mission-vision h3 {
+      color: #6b3e26;
+      margin-bottom: 15px;
+    }
+
+    .mission-vision p {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      line-height: 1.6;
+      color: #4b2e2e;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #6b3e26;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #f3c28a;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 900px) {
+      .about-section {
+        flex-direction: column;
+      }
+
+      .about-image img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <h1>CoffeeTime</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <div class="page-title">About Us</div>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2>Our Story</h2>
+      <p>CoffeeTime started as a small coffee shop with a big dream: to share the joy of coffee with everyone. We believe that coffee is not just a drink, it's a culture, a lifestyle, and a moment of happiness in your day.</p>
+      <p>From sourcing the finest coffee beans to creating the perfect brew, we take pride in every cup we serve. Our baristas are passionate and skilled, ensuring you always get the best experience.</p>
+    </div>
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Coffee Shop">
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission-vision">
+    <h3>Our Mission</h3>
+    <p>To provide the highest quality coffee experience while creating a cozy and welcoming environment for our customers.</p>
+
+    <h3>Our Vision</h3>
+    <p>To become the community’s favorite coffee destination, spreading warmth, comfort, and happiness, one cup at a time.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CoffeeTime. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>

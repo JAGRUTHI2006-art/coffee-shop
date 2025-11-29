@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop Sign In</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1470&q=80') 
+                  no-repeat center center/cover;
+    }
+
+    .signin-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      text-align: center;
+      width: 320px;
+    }
+
+    .signin-container h2 {
+      margin-bottom: 10px;
+      color: #6b3e26;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #4a2c1a;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .signin-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .signin-container button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background-color: #6b3e26;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .signin-container button:hover {
+      background-color: #54301b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signin-container">
+    <h2>Welcome to CoffeeTime</h2>
+
+    <p class="description">
+      Experience the finest blends, freshly brewed aromas, and a cozy ambience.  
+      Sign in to explore our menu, order your favourite coffee, and enjoy exclusive offers!
+    </p>
+
+    <input type="text" id="username" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signIn()">Sign In</button>
+  </div>
+
+  <script>
+    function signIn() {
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if (username === '' || password === '') {
+        alert('Please enter both email and password!');
+      } else {
+        window.location.href = 'home.html'; // Navigate to home page
+      }
+    }
+  </script>
+
+</body>
+</html>

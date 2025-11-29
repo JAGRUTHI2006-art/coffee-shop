@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeTime - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #fff8f0;
+      color: #4b2e2e;
+    }
+
+    /* Header / Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #6b3e26;
+      color: #fff;
+    }
+
+    header h1 {
+      font-family: 'Georgia', serif;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f3c28a;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+
+    .hero-content a {
+      padding: 12px 25px;
+      background-color: #f3c28a;
+      color: #6b3e26;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .hero-content a:hover {
+      background-color: #d9a066;
+    }
+
+    /* About / Feature Section */
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+      background-color: #fff4eb;
+    }
+
+    .feature {
+      text-align: center;
+      max-width: 300px;
+      margin: 20px;
+    }
+
+    .feature img {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      color: #6b3e26;
+    }
+
+    .feature p {
+      color: #4b2e2e;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #6b3e26;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #f3c28a;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <h1>CoffeeTime</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Wake Up With CoffeeTime</h2>
+      <p>Experience the best coffee from our cozy coffee shop</p>
+      <a href="menu.html">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/100/6b3e26/coffee-to-go.png" alt="Coffee">
+      <h3>Fresh Coffee</h3>
+      <p>Enjoy freshly brewed coffee made from high-quality beans.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/100/6b3e26/cafe.png" alt="variety flavours">
+      <h3>Variety of Flavors</h3>
+      <p>From espresso to cappuccino, we have flavors to delight every palate.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/100/6b3e26/cafe.png" alt="Cafe">
+      <h3>Cozy Ambience</h3>
+      <p>Relax and unwind in our warm and welcoming coffee shop.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CoffeeTime. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
